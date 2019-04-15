@@ -184,7 +184,6 @@ function onKeyDown(event) {
         var maxPoint = new Point(view.size.width, view.size.height);
         var randomPoint = Point.random();
         var point = maxPoint * randomPoint;
-        //We have to do these next two items so that the "push" function won't simply push the string "yellow"
         var newCircle = new Path.Circle(point, 400);
         newCircle.fillColor = keyData[event.key].color;
         keyData[event.key].sound.play();
@@ -214,7 +213,7 @@ function onFrame(event) {
 
 <body>
 
-<!-- Canvas is an HTML5 element used to draw graphics via scripting in JS -->
+<!-- Canvas -->
 <canvas id="myCanvas"></canvas>
 
 </body>
